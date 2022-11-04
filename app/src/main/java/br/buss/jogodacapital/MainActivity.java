@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Digite uma resposta!", Toast.LENGTH_SHORT).show();
         } else {
             if (answerCount != 0) {
-                String answer = editTextAnswer.getText().toString();
+                String answer = editTextAnswer.getText().toString().trim();
                 if (answer.equalsIgnoreCase(selectedState.getCapitalName())) {
                     score += 10;
                     isCorrectAnswer.setText("Parabéns, você acertou!");
